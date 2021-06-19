@@ -1,0 +1,80 @@
+color:XXX;  /*色*/
+font-size:XXX; /*文字サイズ*/
+font-weight:normal/bold; /*太字*/
+font-family:XXX; /*筆記体*/
+box-shadow:XXpx(上下) XXpx(左右) XX(色); /*影。noneで打ち消す事も可*/
+backgorund-color:XXXX; /*背景色*/
+width/height:XXXXpx; /*幅と高さ*/
+list-style:none; /*リストの先頭をなくす*/
+border:XXpx 種類 色; /*枠線*/
+backgorund-image:url(XXX); /*背景画像*/
+backgorund-size:cover; /*背景画像のサイズ、これは画面全部を埋めつくす自動拡大設定*/
+opacity:0.5; /*透明度設定*/
+background-color:rgba(X,X,X,X); /*要素の色と透明度を設定*/
+letter-spacing:XXpx; /*文字間隔*/
+line-height:XXpx; /*上下の文字の間の間隔、要素を中央に寄せる効果もある*/
+display:inline/block/inline-block; /*要素の変更設定*/
+.div:hover{
+} /*カーソルが要素に乗ったときのアクション*/
+.div:active{
+} /*クリックしてる時だけCSSを適用する*/
+cursol:text/pointer/default; /*カーソルが要素に乗った時のカーソルの形を変える*/
+border-radius:XXpx; /*枠の角を丸くする*/
+transition:all(対象) 1s(時間); /*要素にアニメーションをつける*/
+
+
+/*レイアウト*/
+float:left/right/none;
+clear:left; /*floatを解除する。高さを親>子とする為に必要、主に子要素に使用*/
+padding:XXpx; /*borderの中 */
+margin:XXpx; /*borderの外 */
+text-align:left/right/center; /*テキスト等のインライン要素、
+インラインブロック要素の配置を指定する*/
+position:absolute; /*画面左上を基準に要素を移動、要素同士を  重ねることが出来る*/
+position:relative; /*absoluteの基準点をrelative(親要素)の左上にする*/
+position:fixed; /*スクロールしても指定した位置に常に要素を固定する*/
+z-index:10; /*重ねた時のy座標を指定する、大きいほど上に行く*/
+
+/*要素を真ん中に持っていく方法*/
+margin:0 auto; /*ブロック要素のみ*/
+text-align:center; /*インライン、インラインブロック要素の時に使用*/
+
+/*Flexbox*/
+display:flex; /*子要素を横並びにする*/
+flex:auto; /*子要素の幅を親要素に合わせて伸縮させる*/
+flex-wrap:wrap; /*要素を折り返して複数行で表示させる*/
+flex-direction:column; /*子要素を上から下に並べる*/
+
+
+
+/*メディアクエリ(ブラウザの画面サイズ差異による表示設定)
+※使用する際は<head>内にviewportを設定する必要がある
+*/
+@media(XX:XXpx){
+  /*処理*/
+  }        /*これが基本的な形。pxの部分はブレイクポイントと呼ばれてる*/
+@media(max-width: 1000px){
+  /*画面幅が1000px以下に適用される内容*/
+}
+@media(min-width: 1000px){
+  /*画面幅が1000px以上の時に適用される内容*/
+}
+*{
+box-sizing:border-box;
+}           /*要素の幅の合計にpaddingとmarginが含まれるようになる*/
+
+
+
+
+/*ブロック要素とインライン要素について
+ブロック要素にはwidth、heightの指定ができるが
+インライン要素（改行がない）ものはwidth、heightは左右しか指定できない
+インライン要素はインラインブロック要素にすることで上下左右の指定が可能となる
+「display:～」で変更可能
+*/
+
+
+/*補足
+<a>要素はインライン要素のため文字だけにリンククリック効果が生じる。
+ブロック要素に変更すればリンククリック範囲が拡大する
+*/
