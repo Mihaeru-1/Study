@@ -1,0 +1,45 @@
+.header{
+  height:65px;
+  width:100%;
+  background-color:rgba(34, 49, 52, 0.9);
+  position:fixed;
+}
+
+.logo{
+  float:left;
+  padding:10px;
+  font-size:10px;
+}
+
+.header-right{
+  float:right;
+  cursor:pointer;
+  margin:20px 20px;
+  color:white;
+}
+
+.header-right:active{
+
+}
+
+.top-wrapper{
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  color:white;
+  text-align:center;
+  padding: 150px 0;
+  top: 0;
+}
+
+.title{
+
+}
+
+.lesson-wrapper{
+  font-size:25px;
+  color:black;
+  text-align:center;
+  background-color:#f7f7f7;
+  height:300px;
+
+}
