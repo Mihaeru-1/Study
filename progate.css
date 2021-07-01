@@ -98,3 +98,37 @@ header{
   opacity:0.8;
   font-weight:normal;
 }
+
+.icon-wrapper{
+
+}
+
+.hexagon{
+  text-align:center;
+}
+
+.hexagon p{
+  opacity:0.7;
+}
+
+
+
+
+
+.message-wrapper{
+  background-color:white;
+}
+
+.footer{
+  float:left;
+  padding:10px 0;
+}
+
+.footer_image{
+  width:124px;
+}
+
+.footer_comment{
+  font-size:10px;
+  opacity:0.7;
+}
