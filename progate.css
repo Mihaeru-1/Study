@@ -91,37 +91,56 @@ header{
 .start{
   background-color:#f7f7f7;
   padding:100px 0 120px 0;
-  text-align:center;
+
 }
 
 .startComment{
   opacity:0.8;
   font-weight:normal;
-}
-
-.icon-wrapper{
-
-}
-
-.hexagon{
   text-align:center;
 }
 
-.hexagon p{
+
+.icon-wrapper{
+  text-align:center;
+}
+
+.hexagon{
+  width:200px;
+  height:100%;
+  display: inline-block;
+  margin:0 30px;
+}
+
+
+.hexagon_icon p{
+  position:absolute;
+  color: white;
+}
+
+.text{
+  font-size:13px;
   opacity:0.7;
 }
 
 
-
-
-
-.message-wrapper{
-  background-color:white;
+.creative_comment{
+  text-align:center;
 }
 
-.footer{
-  float:left;
-  padding:10px 0;
+.button{
+  text-align:center;
+  margin: 50px 0;
+}
+
+.btn_message{
+  background-color:#5dca88;
+  padding:15px;
+  text-decoration:none;
+  border-radius: 2px;
+  color:white;
+  cursor:pointer;
+
 }
 
 .footer_image{
